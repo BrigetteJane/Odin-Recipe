@@ -1,0 +1,432 @@
+
+*{
+    font-family: 'Montserrat';
+
+}
+
+/* body{
+    background-image: url(https://i.pinimg.com/564x/2e/85/45/2e8545b93763c510113ec850ab15f500.jpg);
+    background-attachment: fixed;
+} */
+
+
+a{
+    text-decoration: none;
+    color: white;
+}
+
+#navName,#landingTitle, #seeRecipe, #headingTitle, #learnMore,#recipeBookTitle,.recipeName,.checkRecipe,#chefName,#featuresTitle{
+    font-family: 'Open Sans';
+}
+
+
+  .footerDetails>p, #copyRights{
+    font-size: .7rem;
+}
+
+#chefDetails{
+    font-size: .9rem;
+    line-height: 1.2rem;
+    text-align: justify;
+}
+
+#page-wrapper,body{
+    margin:0;
+}
+
+
+#nav, #navList, #landingPage, #features{
+  display: flex;
+  flex-direction: row ;
+  flex-wrap:wrap;
+  justify-content: center;
+}
+
+
+#nav, #navList{
+align-items: center;
+color:white;
+}
+
+#nav{
+padding:20px;
+gap:20%;
+}
+
+#navName{
+margin: 18px; 
+font-weight: 900;
+font-size: 2rem;
+}
+
+#navList {
+list-style: none;
+}
+
+.navItems{
+margin: 18px;
+}
+
+#landingPage{
+padding: 40px 120px ;
+gap:40px;
+color:white;
+}
+
+#landingTitle{
+    font-size: 2.7rem;
+}
+
+#landingText{
+height:400px;
+width: 450px;
+left: -30vw; 
+opacity: 0;
+animation: rightSlide 2s forwards;
+transition: 0.5s;  
+}
+
+
+#seeRecipe{
+    height: 50px;
+    width:180px;
+    background-color: tomato;
+    border-radius: 50px;
+    margin-top:30px;
+    border:none;
+    font-weight: bolder;
+    font-size:20px;
+    color: white;
+}
+
+
+
+#landingImage{
+     height:420px;
+     width:550px;
+     position: relative;
+     right: -30vw; 
+     opacity: 0;
+     animation: leftSlide 2s forwards;
+     transition: 0.5s;  
+}
+
+
+
+
+@keyframes leftSlide  {
+    100% {right:0};
+    from {opacity: 0} to {opacity: 1};
+}
+
+@keyframes rightSlide  {
+    100% {right:0};
+    from {opacity: 0} to {opacity: 1};
+}
+
+
+
+@media only screen and (max-width: 750px) {
+    #nav #navList,#features {
+      flex-direction: column;
+      padding:0;
+    }
+
+    .featureBox{
+        margin-bottom:20px;
+    }
+
+    #landingImage{
+        margin-top:80px;
+        height:380px;
+        width:380px;
+    }
+
+    #landingPage{
+        padding:0;
+        text-align: center;
+        }
+  }
+
+
+  #features{
+   align-items:center;
+   gap:5%;
+   text-align: center;
+   margin-bottom:5%;
+  }
+
+  .featureBox{
+    height: 200px;
+    width:200px;
+    padding:20px;
+  }
+
+  .featureBox>h4{
+    color: seagreen;
+  }
+
+  .featureBox>p{
+    font-size: 0.9rem;
+  }
+
+  #featuresTitle{
+    text-align: center;
+    font-size: 2rem;
+    padding: 10px 0 20px 0;
+    color:seagreen; 
+  }
+
+
+#headlinePage{
+    display:flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    color:white;
+    text-align: center;
+}
+
+
+#headingTitle{
+    font-size: 2rem;
+    padding-top: 50px;
+}
+
+#learnMore{
+    height: 50px;
+    width:180px;
+     background-color: tomato;
+     border-radius: 50px;
+     border:none;
+     font-weight: bolder;
+     font-size:20px;
+     color: aliceblue;
+     margin-top:5%;
+ }
+
+#parallaxImage{
+    padding-top: 70px;
+    height:450px;
+    width: 480px;
+    margin-bottom:50px;
+    position: relative;
+    bottom: -30vw; 
+    opacity: 0;
+    animation: bottomSlide 2s forwards;
+    animation-timing-function: 3s;
+    transition: 0.5s;  
+    
+}
+
+@keyframes bottomSlide  {
+    100% {bottom:0};
+    from {opacity: 0} to {opacity: 1};
+}
+
+
+
+.parsley{
+    height:100px;
+    width:100px;
+}
+
+#parsley1{
+top:1350px;
+left:200px;
+}
+
+#parsley2{
+    top:1320px;
+    right:100px;
+}
+
+#parsley3{
+    top:1500px;
+    right:300px;
+}
+
+#parsley4{
+    top:1500px;
+    left:300px;
+}
+
+#parsley5{
+    top:1400px;
+    left:600px;
+}
+
+#recipe{
+    padding:100px;
+}
+
+#theRecipesBox{
+    display:flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content:space-around;
+    align-items: center;
+}
+
+
+#recipeBookTitle{
+    text-align: center;
+    font-size: 2rem;
+    color: white;
+    padding-bottom: 80px;
+}
+
+.recipesCard{
+height:380px;
+width:250px;
+border-radius:20px;
+padding: 30px;
+text-align: center;
+}
+
+.recipeImage{
+    height:200px;
+    width: 200px;
+    animation: appear 2s forwards;
+    animation-timing-function: 3s; 
+    transform: translateX(1.5%);
+}
+
+@keyframes appear {
+    from {opacity: 0} to {opacity: 1};
+
+}
+
+.recipeName{
+    color:seagreen;
+    font-weight: bolder;
+}
+
+.checkRecipe{
+    height: 50px;
+    width:200px;
+    font-weight: bolder;
+    background-color:tomato;
+    border-radius: 50px;
+    border:none;
+    color: aliceblue; 
+}
+
+@media only screen and (max-width: 800px) {
+   #section4{
+    padding:20px 20px;
+   }
+   
+   .recipesCard{
+    margin-bottom:30px;
+    padding-bottom: 50px;
+   }
+
+   #infoVid{
+    height: 300px; 
+    width: 400px;
+   }
+
+  }
+
+  @media only screen and (max-width: 1000px) {
+   #landingText{
+    width:700px;
+    height: 300px;
+    text-align: center;
+   }
+
+   #landingImage{
+    margin-top:100px;
+}
+
+
+.parsley{
+    display: none;
+}
+   .recipesCard{
+    margin-bottom: 30px;
+   }
+   }
+ 
+ 
+#chefDetails{
+    height:400px; width:540px;
+}
+
+#chefProfile{
+ display: flex;
+ flex-direction: row;
+ justify-content: center;
+ align-items: center;
+}
+
+#chefName{
+    font-weight: bolder;
+    color: white;
+    text-align: center;
+    background-color:tomato;
+}
+
+#sns{
+text-align: center;
+}
+
+.fa-brands{
+    text-align: center;
+    margin:5px;
+    font-size: 1.5rem;
+    color:tomato;
+}
+
+#listOfDetails, #socialMedia{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+
+@media only screen and (max-width: 750px) {
+    #chefProfile{
+        flex-direction: column-reverse;
+        padding: 90px 0 0 0;
+    }
+   #chefDetails{
+    height:450px;
+    width:480px;
+    text-align: center;
+   }
+
+   #listOfDetails{
+    flex-direction: column;
+    margin: 20px;
+   }
+}
+
+.footerDetails{
+    text-align: center;
+}
+
+#socialMedia{
+    list-style:none;
+}
+
+.socialSites{ 
+    font-size: 1rem;
+    color:white;
+}
+
+#copyRights{
+text-align: center;
+padding: 10px;
+};
+
+hr{
+    color:honeydew;
+    border:none;
+}
+
+
+
+

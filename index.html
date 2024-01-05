@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- CSS LINK -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- GOGGLE FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Open+Sans:wght@300;800&display=swap" rel="stylesheet">
+
+    <!-- FONT AWESOME -->
+    <script src="https://kit.fontawesome.com/905a42ee69.js" crossorigin="anonymous"></script>
+
+    <!-- JQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+
+    <!-- JS -->
+    <script src="script.js"></script>
+    <title>Odin Recipes</title>
+</head>
+<body>
+  <div id="page-wrapper">
+    <section id="section1" style="background-color:#FFD700;">
+        <div id="nav">
+            <div id="navName">ODIN'S RECIPE</div>
+            <ul id="navList">
+                <li id="Home" class="navItems" ><a href="index.html">Home</a></li>
+                <li id="Recipes" class="navItems" ><a href="#recipe">Recipes</a></li>
+                <li id="AboutUs"class="navItems" ><a href="#aboutUs">About Us</a></li>
+                <li id="ContactUs"class="navItems" ><a href="#contactUs">Contact Us</a></li>
+            </ul>
+        </div>
+    </section>
+    
+
+    <section id ="home" style="background-color:#FFD700;">
+        <div id="landingPage">
+            <div id="landingText">
+             <h3 id="landingTitle">LET'S DO THE MAGIC OF COOKING</h3>
+             <p>Step into our culinary wonderland, where the art of cooking becomes a vibrant, colorful adventure. Our website is your gateway to a world of delectable recipes, culinary inspiration, and a treasure trove of knowledge designed to elevate your home cooking experience. </p>
+             <button id="seeRecipe" type="button">SEE RECIPE <i class="fa-solid fa-arrow-right"></i></button>
+            </div>
+    
+            <div id="landingImageBox">
+                <img id="landingImage"src="/images/landingPageImage.png" alt="stakeImage">
+            </div>
+        </div>
+    </section>
+
+
+    <section>
+        <h2 id="featuresTitle">Why choose Odin's Recipe?</h2>
+        <div id="features">
+          <div id="features1" class="featureBox">
+            <img src="images/books.png" alt="" style="height:70x; width:70px">
+            <h4>Culinary Education</h4>
+            <p>Let your culinary knowledge flourish as you delve into a world of techniques, tutorials, and cooking wisdom.</p>
+          </div>
+
+          <div id="features3" class="featureBox">
+            <img src="images/travel.png" alt="" style="height:70x; width:70px">
+            <h4>Explore and Create</h4>
+            <p>Immerse yourself in a kaleidoscope of recipes, each one a burst of color and flavor.</p>
+          </div>
+
+          <div id="features2" class="featureBox">
+            <img src="images/champagne.png" alt=""style="height:70x; width:70px">
+            <h4>Cooking for Special Occasions</h4>
+            <p>Elevate your celebrations with a palette of special occasion recipes. </p>
+          </div>
+
+
+        </div>
+    </section>
+    
+
+    <section id ="section3" style="background-color:#FFD700;">
+        <div id="headlinePage">
+            <div id="headlineText" >
+             <h3 id="headingTitle">Why do people find Odin's food facinating?</h3>
+             <p>Here is the skills you need to have inorder to make a magic cookinng with odin's recipe</p>
+             <button id ="learnMore"type="button">LEARN MORE <i class="fa-solid fa-arrow-right"></i></button>
+            </div>
+    
+            <div >
+                <img id="parallaxImage" src="/images/parllaxImage5.png" alt="parallaxImage" >
+            </div>
+            
+  <img class="parsley" id="parsley1" src="/images/parsley.png" alt="parsley" style="position: absolute;">
+  <img class="parsley" id="parsley2" src="/images/parsley.png" alt="parsley" style="position: absolute;">
+  <img  class="parsley" id="parsley3" src="/images/parsley.png" alt="parsley" style="position: absolute;">
+  <img  class="parsley" id="parsley4" src="/images/parsley.png" alt="parsley" style="position: absolute;">
+  <img  class="parsley" id="parsley5" src="/images/parsley.png" alt="parsley" style="position: absolute;">
+
+    </section>
+
+
+    <section id ="recipe" >
+        <h2 id = "recipeBookTitle"style="color:seagreen">THE ODIN'S RECIPE</h2>
+        <div id="theRecipesBox">
+
+            <div class="recipesCard" style="border:3px solid pink">
+               <img class="recipeImage" src="https://i.pinimg.com/564x/c0/0e/45/c00e45b6cd6a52d723dbc3403165e44f.jpg" alt="KatsudonRamen"> 
+               <h3 class="recipeName">KATSUDON RAMEN SOUP</h3>
+               <p>Type | Noodle Soup</p>
+               <p>Origin | Japan</p>
+               <button id ="recipe1"class="checkRecipe" type="button">VIEW RECIPE <i class="fa-solid fa-arrow-right"></i></button>
+            </div>
+
+            <div class="recipesCard"style="border:3px solid dodgerblue">
+                <img class="recipeImage" src="https://i.pinimg.com/564x/12/bb/c0/12bbc01ff5f7fa3968700188a5a4e998.jpg" alt="PorkCutlet"> 
+
+                <h3 class="recipeName">TONKATSU FRIED PORK</h3>
+               <p>Type | Fried Pork Cutlet</p>
+               <p>Origin | Japan</p>
+               <button class="checkRecipe" type="button" id ="recipe2">VIEW RECIPE <i class="fa-solid fa-arrow-right"></i></button>
+            </div>
+
+            <div class="recipesCard" style="border:3px solid seagreen">
+
+                 <img class="recipeImage" src="https://i.pinimg.com/564x/8a/e9/5c/8ae95c7d92dcd11b342a78b9a2a57031.jpg" alt="SeafoodRamen"> 
+
+                <h3 class="recipeName">EBISOBA RAMEN</h3>
+                <p>Type | Noodle Soup</p>
+               <p>Origin | Japan</p>
+               <button class="checkRecipe" id="recipe3" type="button">VIEW RECIPE <i class="fa-solid fa-arrow-right"></i></button>
+                
+            </div>
+
+        </div>
+    </section>
+
+
+    <section id="aboutUs">
+         <div id="chefProfile">
+                <div id="chefDetails">
+                  <h1 id="chefName">GABRIEL MARTINEZ</h1>
+                  <p>Chef Gabriel Martinez is a highly accomplished culinary expert with over 15 years of experience in the industry. Holding a Bachelor's degree in Culinary Arts from the prestigious Le Cordon Bleu Institute, he has garnered recognition as the "Best Fusion Chef of the Year" by the International Culinary Association. His culinary journey has taken him from the bustling kitchens of New York City to the vibrant culinary scene of Barcelona, where his innovative fusion of Japanese and Latin American flavors has earned h cisritical acclaim. Chef Gabriel is not only known for his exceptional menu creations but also for his commitment to sustainability, advocating for locally sourced, organic ingredients. He is also a bestselling cookbook author, sharing his culinary wisdom and global recipes in "Flavors of the World: A Culinary Journey." His passion for excellence and dedication to his craft make him a culinary force to be reckoned with.</p>
+                    <div id="sns">
+                        <a><i class="fa-brands fa-facebook"></i></a>
+                        <a><i class="fa-brands fa-instagram"></i></a>
+                        <a><i class="fa-brands fa-linkedin"></i></a>
+                        <a><i class="fa-brands fa-twitter"></i></a>
+                        
+                    </div>
+                 
+                </div> 
+                  <div style="height: 250px; width: 250px;"><img src="/images/chefImage.png" alt="chefImage" srcset="" >
+                </div>
+                
+          </div>    
+    </section>
+    
+    <hr>
+    <footer id ="contactUs"style="background-color: seagreen; color: aliceblue;">
+        <div id="listOfDetails">
+
+            <div class="footerDetails">
+                <p>About</p>
+                <p>Practice for Odin Project(The Odin's Recipe)</p>
+            </div>
+            <div class="footerDetails">
+                <p>Image Used</p>
+                <p>credits to the rightful owner</p>
+            </div>
+            <div class="footerDetails">
+                <p>Image Used</p>
+                <p>All image are not mine</p>
+            </div>
+            <div class="footerDetails">
+                <p>Contact Us</p>
+               <div id="socialMedia">
+                 <i class="fa-brands socialSites fa-facebook"></i>
+                 <p id="snsName"></p>
+                 <p  id="snsContainer"></p>
+                 <i class="fa-brands socialSites fa-instagram"></i>
+                 <i class="fa-brands socialSites fa-linkedin"></i>
+                <i class="fa-brands socialSites fa-twitter"></i>
+               </div>
+            </div>
+
+        </div>
+<hr>
+        <div id="copyRights">
+            <p>Brigette Jane Hernandez</p>
+        </div>
+
+    </footer>
+
+    </div>
+
+
+
+  </div>
+    
+    
+</body>
+</html>

@@ -1,0 +1,248 @@
+*{
+  font-family: 'Montserrat';
+}
+
+a{
+  text-decoration: none;
+  color: white;
+}
+
+
+
+#page-wrapper,body{
+  margin:0;
+}
+
+#nav, #navList{
+display: flex;
+flex-direction: row ;
+flex-wrap:wrap;
+justify-content: center;
+align-items: center;
+color:white;
+}
+
+#nav{
+padding:20px;
+gap:15%;
+}
+
+#navName{
+margin: 18px; 
+font-family: 'Open Sans';
+font-weight: 900;
+font-size: 2rem;
+}
+
+#navList {
+list-style: none;
+}
+
+.navItems{
+margin: 18px;
+}
+
+
+
+.recipeImageSmall{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+#recipeName{
+  font-family: 'Open Sans';
+  font-size: 2rem;
+  font-weight: bolder;
+  color:white;
+}
+
+#recipeDescription{
+padding:20px;
+}
+
+
+#description{
+  font-size: .9rem;
+  line-height:1.2rem;
+  text-align: justify;
+  color: aliceblue;
+}
+
+.sectionTitle{
+  text-align: center;
+  padding: 20px;
+  font-family: 'Open Sans';
+  font-size: 2rem;
+  font-weight: bolder;
+  color:midnightblue;
+}
+
+
+
+#prepDetailsBox{
+  border:3px solid tomato;
+  margin:30px 380px ;
+  border-radius:20px;
+}
+
+#prepDetails{
+  display: flex;
+  flex-direction: row;
+  justify-content:space-evenly;
+  align-items:center;
+  text-align: center;
+}
+
+.icon{
+  font-size: 1.2rem;
+  color:tomato;
+}
+
+.ingredients{
+  display: flex;
+  flex-direction:row;
+  justify-content: center;
+  padding:0 300px;
+}
+
+.listOfIngredients{
+  padding:20px;
+}
+
+li{
+  list-style:none;
+  line-height:26px;
+}
+
+#saveRecipes{
+height:40px;
+width:200px;
+background-color: royalblue;
+border:none;
+color: white;
+}
+
+#procedureBox{
+padding:0px 300px;
+}
+
+h4,h3{
+  font-family:'Open Sans';
+  font-weight: 900;
+}
+
+h3{
+  color:tomato;
+}
+
+#sec5Title{
+  display: flex; 
+  flex-direction: row; 
+  align-items: center; 
+  justify-content: left; 
+  padding:0 320px;
+}
+
+#headerImage, #recipeDescriptionBox,#recipeImageBox,#finishProductImage{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+@media only screen and (max-width: 1000px) {
+  #nav, #navList,.ingredients, #recipeImageSmall,#finishProductImage{
+    flex-direction: column;
+    padding:0;
+  }
+   
+  #sec5Title{
+    justify-content: center;
+    padding: 0;
+  }
+  #finishProductImage{
+    align-items: center;
+  }
+  #section2{
+    display: none;
+  }
+
+  #procedureBox{
+    padding:0;
+  }
+  #prepDetailsBox{
+    display:none;
+  }
+
+}
+
+
+#section7{
+margin:50px 0;
+}
+
+#statementBox{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+#comment{
+  padding:20px;
+  font-size: 0.9rem;
+  height: 100px; 
+  width: 700px;
+}
+
+#sns{
+  text-align: center;
+  }
+  
+  .fa-brands{
+      text-align: center;
+      margin:5px;
+      font-size: 1.5rem;
+      color:tomato;
+  }
+  
+  #listOfDetails, #socialMedia{
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-around;
+  }
+  
+
+  footer{
+    color: aliceblue;
+  }
+
+  
+.footerDetails{
+  text-align: center;
+ 
+}
+
+#socialMedia{
+  list-style:none;
+}
+
+.socialSites{ 
+  font-size: 1rem;
+  color:white;
+}
+
+#copyRights{
+text-align: center;
+padding: 10px;
+};
+
+hr{
+  color:honeydew;
+  border:none;
+}
+
+.footerDetails>p,  #copyRights{
+  font-size: .7rem;
+}
